@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Java Syllabus Progress</title>
+  <link rel="stylesheet" href="../style.css" />
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <h1><!-- Branding Placeholder --></h1>
+    <nav>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Syllabus</a></li>
+        <li><a href="#">Practice</a></li>
+        <li><a href="#">Login</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <h1>Java Syllabus Checklist</h1>
+    <p>Track your Java learning progress and complete all topics step by step.</p>
+  </section>
+
+  <!-- Progress Tracker -->
+  <section class="progress-section">
+    <label for="progress">Overall Completion:</label>
+    <progress id="progress" value="0" max="100"></progress>
+    <p id="percentage">0%</p>
+  </section>
+
+  <!-- Checklist Form -->
+  <section class="checklist" id="checklistForm">
+
+    <!-- Unit I -->
+    <div class="unit">
+      <h2>Unit I – Core Java Basics</h2>
+      <label><input type="checkbox"> Why Java</label>
+      <label><input type="checkbox"> History of Java</label>
+      <label><input type="checkbox"> JVM</label>
+      <label><input type="checkbox"> JRE</label>
+      <label><input type="checkbox"> Java Environment</label>
+      <label><input type="checkbox"> Java Source File Structure</label>
+      <label><input type="checkbox"> Compilation</label>
+      <label><input type="checkbox"> Defining Classes</label>
+      <label><input type="checkbox"> Constructors</label>
+      <label><input type="checkbox"> Methods</label>
+      <label><input type="checkbox"> Access Specifiers</label>
+      <label><input type="checkbox"> Static Members</label>
+      <label><input type="checkbox"> Final Members</label>
+      <label><input type="checkbox"> Comments</label>
+      <label><input type="checkbox"> Data Types</label>
+      <label><input type="checkbox"> Variables</label>
+      <label><input type="checkbox"> Operators</label>
+      <label><input type="checkbox"> Control Flow</label>
+      <label><input type="checkbox"> Arrays & Strings</label>
+      <label><input type="checkbox"> OOP Basics</label>
+      <label><input type="checkbox"> Packages & JAR Files</label>
+      <label><input type="checkbox"> Microprocessor Architecture</label>
+    </div>
+
+    <!-- Unit II -->
+    <div class="unit">
+      <h2>Unit II – Exceptions, I/O, Multithreading</h2>
+      <label><input type="checkbox"> Exception Basics</label>
+      <label><input type="checkbox"> try, catch, finally</label>
+      <label><input type="checkbox"> throw, throws</label>
+      <label><input type="checkbox"> Built-in/User-defined Exceptions</label>
+      <label><input type="checkbox"> File I/O</label>
+      <label><input type="checkbox"> Byte/Character Streams</label>
+      <label><input type="checkbox"> Multithreading</label>
+      <label><input type="checkbox"> Synchronization</label>
+      <label><input type="checkbox"> Inter-thread Communication</label>
+    </div>
+
+    <!-- Unit III -->
+    <div class="unit">
+      <h2>Unit III – Java 8+ Features</h2>
+      <label><input type="checkbox"> Lambda Expressions</label>
+      <label><input type="checkbox"> Functional Interfaces</label>
+      <label><input type="checkbox"> Method References</label>
+      <label><input type="checkbox"> Stream API</label>
+      <label><input type="checkbox"> Default/Static Methods</label>
+      <label><input type="checkbox"> Base64 Encoding</label>
+      <label><input type="checkbox"> Try-with-resources</label>
+      <label><input type="checkbox"> Type Annotations</label>
+      <label><input type="checkbox"> Repeating Annotations</label>
+      <label><input type="checkbox"> Java Modules</label>
+      <label><input type="checkbox"> Local Variable Type Inference</label>
+      <label><input type="checkbox"> Switch Expressions</label>
+      <label><input type="checkbox"> Yield Keyword</label>
+      <label><input type="checkbox"> Text Blocks</label>
+      <label><input type="checkbox"> Records</label>
+      <label><input type="checkbox"> Sealed Classes</label>
+    </div>
+
+    <!-- Unit IV -->
+    <div class="unit">
+      <h2>Unit IV – Collections Framework</h2>
+      <label><input type="checkbox"> Collection Interface</label>
+      <label><input type="checkbox"> List, Set, Map Interfaces</label>
+      <label><input type="checkbox"> ArrayList, LinkedList</label>
+      <label><input type="checkbox"> HashSet, LinkedHashSet, TreeSet</label>
+      <label><input type="checkbox"> HashMap, TreeMap, Hashtable</label>
+      <label><input type="checkbox"> Iterator</label>
+      <label><input type="checkbox"> Comparable/Comparator</label>
+      <label><input type="checkbox"> Properties Class</label>
+    </div>
+
+    <!-- Unit V -->
+    <div class="unit">
+      <h2>Unit V – Spring & Spring Boot</h2>
+      <label><input type="checkbox"> Spring Core, IoC, DI</label>
+      <label><input type="checkbox"> Bean Scopes</label>
+      <label><input type="checkbox"> Annotations & Configuration</label>
+      <label><input type="checkbox"> Spring Boot Code Structure</label>
+      <label><input type="checkbox"> Spring Boot Runners</label>
+      <label><input type="checkbox"> REST API (GET, POST, etc.)</label>
+      <label><input type="checkbox"> Web Application Basics</label>
+    </div>
+
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Java Progress Tracker | Demo Use Only</p>
+  </footer>
+
+  <!-- Script for Progress Bar -->
+  <script>
+    const checkboxes = document.querySelectorAll('input[type="checkbox"]');
+    const progress = document.getElementById('progress');
+    const percentageText = document.getElementById('percentage');
+
+    function updateProgress() {
+      const total = checkboxes.length;
+      const checked = [...checkboxes].filter(cb => cb.checked).length;
+      const percent = Math.round((checked / total) * 100);
+      progress.value = percent;
+      percentageText.textContent = percent + '%';
+    }
+
+    checkboxes.forEach(cb => cb.addEventListener('change', updateProgress));
+  </script>
+
+</body>
+</html>
