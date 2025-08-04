@@ -198,6 +198,54 @@ h1, h2, h3, p {
   text-decoration: underline;
 }
 
+/*sections*/
+.Sections {
+  padding: 50px 30px;
+  background-color: #222;
+  text-align: center;
+}
+
+.Sections h2 {
+  font-size: 2.5em;
+  margin-bottom: 20px;
+}
+
+.section-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+}
+
+.section-card {
+  background-color: #222;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.5);
+  width: 80%;
+  max-width: 600px;
+  text-align: center;
+}
+
+.section-card h3 {
+  font-size: 1.8em;
+  color: #0f9;
+}
+
+.section-card p {
+  font-size: 1.1em;
+  color: #ccc;
+}
+
+.section-card a {
+  color: #0f9;
+  text-decoration: none;
+}
+
+.section-card a:hover {
+  text-decoration: underline;
+}
+
 /* Social Media */
 .social-media {
   padding: 40px 20px;
