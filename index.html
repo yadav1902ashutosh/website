@@ -1,132 +1,135 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Learn Web Development</title>
-  <link rel="stylesheet" href="style.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>template</title>
+    <link rel="stylesheet" href="css/base.css">
 </head>
 <body>
-
-  <!-- Header -->
-  <header>
-    <h1><a href="index.html">Website.com</a></h1>
-    <nav>
+      <!-- Header -->
+  <header class="site-header">
+    <div class="logo">
+      <h1>Devios Plays</h1>
+    </div>
+    <nav class="main-nav">
       <ul>
         <li><a href="index.html">Home</a></li>
-        <li><a href="Aktu/index.html">AKTU</a></li>
-        <li><a href="Aptitude/index.html">Aptitude</a></li>
-        <li><a href="C++/index.html">C++</a></li>
-        <li><a href="Checklist/index.html">Checklists</a></li>
-        <li><a href="DSA/index.html">DSA</a></li>
-        <li><a href="HTML/index.html">HTML</a></li>
-        <li><a href="Java/index.html">JAVA</a></li>
-        <li><a href="JavaScript/index.html">JavaScript</a></li>
-        <li><a href="MongoDB/index.html">MongoDB</a></li>
-        <li><a href="SQL/index.html">SQL</a></li>
+        <li><a href="games.html">Games</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="videos.html">Videos</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
       </ul>
     </nav>
   </header>
 
-  <!-- Hero Section -->
-  <section class="hero">
-    <h1>Learn to Code</h1>
-    <p>With the world’s most popular web development tutorials.</p>
-  </section>
+    <!-- Main Content -->
+<main>
+    <!-- Hero Section -->
+    <section class="hero">
+      <h1>Welcome to Website</h1>
+      <p>Your Learning Hub – News, Clips, Guides & Tips from Across the Community</p>
+    </section>
 
-  <!-- Important subsections of the site -->
-  <section class="Sections">
-    <h2>Topics</h2>
+    <!-- Trending Games Section -->
+    <section class="trending-games">
+      <h2>🔥 What's Hot in Gaming</h2>
+      <ul>
+        <li><a href="bf6.html">Battlefield 6 – Leaks, Loadouts & News</a></li>
+        <li><a href="xdefiant.html">XDefiant – Best Loadouts This Week</a></li>
+        <li><a href="valorant.html">Valorant – Patch Highlights & Meta</a></li>
+      </ul>
+    </section>
 
-    <div class="section-container">
-      <div class="section-card">
-        <h3><a href="Aktu/index.html">AKTU</a></h3>
+    <!-- Section Tiles -->
+    <section class="important-sections">
+      <h2>🧭 Explore Sections</h2>
+      <div class="tile-grid">
+        <div class="tile"><a href="blog.html">🧠 Blogs & Guides</a></div>
+        <div class="tile"><a href="videos.html">🎥 Clips & Montages</a></div>
+        <div class="tile"><a href="games.html">🕹 Game Library</a></div>
+        <div class="tile"><a href="contact.html">📢 Submit a Clip</a></div>
       </div>
-    </div>
+    </section>
 
-    <div class="section-container">
-      <div class="section-card">
-        <h3><a href="Aptitude/index.html">Aptitude</a></h3>
+    <!-- Blog Section -->
+    <section class="latest-blog-posts">
+      <h2>🧠 Blog Zone – Tips, Guides, and Gaming Thoughts</h2>
+      <div class="blog-container">
+        <div class="blog-card">
+          <h3><a href="post1.html">Getting Started in Delta Force</a></h3>
+          <p>Delta Force is a fast-paced, tactical game that challenges even the most skilled players. In this post, I’ll guide you through the basics...</p>
+        </div>
+        <div class="blog-card">
+          <h3><a href="post2.html">Top Strategies for Delta Force Multiplayer</a></h3>
+          <p>In multiplayer matches, teamwork is key. I'll share some of my favorite strategies for winning matches with your squad...</p>
+        </div>
       </div>
+    </section>
 
-      <div class="section-card">
-        <h3><a href="C++/index.html">C++</a></h3>
+    <!-- Game Tiles Section -->
+    <section class="game-tiles">
+      <h2>🎮 Explore by Game</h2>
+      <div class="tile-grid">
+        <div class="tile"><a href="bf6.html">Battlefield 6</a></div>
+        <div class="tile"><a href="xdefiant.html">XDefiant</a></div>
+        <div class="tile"><a href="valorant.html">Valorant</a></div>
+        <div class="tile"><a href="deltaforce.html">Delta Force</a></div>
       </div>
+    </section>
 
-      <div class="section-card">
-        <h3><a href="Checklist/index.html">Checklists</a></h3>
+    <!-- YouTube Showcase Section -->
+    <section class="youtube-showcase">
+      <h2>🎮 Clips from the Frontlines</h2>
+      <p>Quick, crazy moments from the community. Yours truly included 😎</p>
+      <div class="video-scroll-container">
+        <div class="video-card">
+          <iframe src="https://www.youtube.com/embed/HfSpvyMcNzE" frameborder="0" allowfullscreen></iframe>
+          <h3><a href="https://www.youtube.com/watch?v=HfSpvyMcNzE" target="_blank">They Really Be Letting Me Get Away With This</a></h3>
+          <p>A quick but wild moment from Delta Force — you won’t believe how much I got away with in just seconds!</p>
+        </div>
+        <div class="video-card">
+          <iframe src="https://www.youtube.com/embed/iOah9bOwMmc" frameborder="0" allowfullscreen></iframe>
+          <h3><a href="https://www.youtube.com/watch?v=iOah9bOwMmc" target="_blank">Delta Force Domination - 70+ Kill Montage</a></h3>
+          <p>Check out my insane kill streaks in this high-octane Delta Force montage. One of my best matches yet!</p>
+        </div>
+        <div class="video-card">
+          <iframe src="https://www.youtube.com/embed/HYT-airDH48" frameborder="0" allowfullscreen></iframe>
+          <h3><a href="https://www.youtube.com/watch?v=HYT-airDH48" target="_blank">Delta Force Gameplay</a></h3>
+          <p>New gameplay action from Delta Force — precision shots, team coordination, and intense firefights!</p>
+        </div>
+        <div class="video-card">
+          <iframe src="https://www.youtube.com/embed/81meHYNbWRk" frameborder="0" allowfullscreen></iframe>
+          <h3><a href="https://www.youtube.com/watch?v=81meHYNbWRk" target="_blank">Delta Force - Tactical Sweep Killstreaks</a></h3>
+          <p>A clean montage of fast-paced tactical gameplay and precision eliminations.</p>
+        </div>
       </div>
-
-      <div class="section-card">
-        <h3><a href="DSA/index.html">DSA</a></h3>
+      <div class="show-more-container">
+        <a href="videos.html" class="show-more-btn">See More Clips</a>
       </div>
+    </section>
 
-      <div class="section-card">
-        <h3><a href="HTML/index.html">HTML</a></h3>
+    <!-- Call to Action -->
+    <section class="community-action">
+      <h2>💬 Join the Devios Community</h2>
+      <p>Got a killer clip, gaming tip, or just want to rant? Reach out or suggest content!</p>
+      <a href="contact.html" class="cta-button">Contribute or Contact</a>
+    </section>
+
+    <!-- Social Media Section -->
+    <section class="social-media">
+      <h2>Follow Me On</h2>
+      <div class="social-links">
+        <a href="https://www.youtube.com/channel/UCk-73Eea9rTmZHZ05SkHgkQ" target="_blank" class="social-icon youtube">YouTube</a>
+        <a href="https://twitter.com/Deviosplays" target="_blank" class="social-icon twitter">Twitter</a>
+        <a href="https://www.instagram.com/Deviosplays" target="_blank" class="social-icon instagram">Instagram</a>
       </div>
+    </section>
+</main>
 
-      <div class="section-card">
-        <h3><a href="Java/index.html">JAVA</a></h3>
-      </div>
-
-      <div class="section-card">
-        <h3><a href="JavaScript/index.html">JavaScript</a></h3>
-      </div>
-
-      <div class="section-card">
-        <h3><a href="MongoDB/index.html">MongoDB</a></h3>
-      </div>
-
-      <div class="section-card">
-        <h3><a href="SQL/index.html">SQL</a></h3>
-      </div>
-  </section>
-
-  <!-- Blog Posts -->
-  <section class="latest-blog-posts">
-    <h2>Latest Blog Posts</h2>
-    <div class="blog-container">
-      <div class="blog-card">
-        <h3>Understanding HTML</h3>
-        <p>A beginner-friendly guide to learning HTML with examples.</p>
-        <a href="#">Read More</a>
-      </div>
-    </div>
-  </section>
-
-  <!-- YouTube Showcase -->
-  <section class="youtube-showcase">
-    <h2>YouTube Showcase</h2>
-    <div class="video-scroll-container">
-      <div class="video-card">
-        <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" allowfullscreen></iframe>
-        <h3>Sample Video Title</h3>
-        <p>This is a description of the video. Learn more by watching.</p>
-        <a href="#" class="show-more-btn">Watch More</a>
-      </div>
-    </div>
-  </section>
-
-
-  <!-- CTA -->
-  <section class="cta">
-    <p>Want to dive deeper into web development?</p>
-    <a href="#">Explore Our Full Tutorials &rarr;</a>
-  </section>
-
-  <!-- Social Media -->
-  <section class="social-media">
-    <h2>Follow Us</h2>
-    <div class="social-links">
-      <a href="#" class="social-icon youtube">YouTube</a>
-      <a href="#" class="social-icon twitter">Twitter</a>
-      <a href="#" class="social-icon instagram">Instagram</a>
-    </div>
-  </section>
-
-  <!-- Footer -->
   <footer>
-    <p>&copy; 2025 LearnWeb | Demo Only</p>
+    <p>&copy; 2025 Devios Plays. All Rights Reserved.</p>
   </footer>
 
 </body>

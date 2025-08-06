@@ -1,0 +1,60 @@
+/* Important Sections tile grid */
+.important-sections {
+  background-color: #111;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.important-sections h2 {
+  font-size: 2.5em;
+  color: #fff;
+  margin-bottom: 30px;
+  word-wrap: break-word;
+  white-space: normal;
+}
+
+.tile-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.tile {
+  background-color: #222;
+  width: 200px;
+  height: 200px;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #0f9;
+  font-size: 1.3em;
+  text-align: center;
+  padding: 10px;
+  transition: transform 0.3s ease;
+}
+
+.tile:hover, .tile:focus {
+  transform: scale(1.05);
+}
+
+.tile a {
+  color: #0f9;
+  text-decoration: none;
+  word-wrap: break-word;
+  white-space: normal;
+}
+
+/* Mobile optimization */
+@media (max-width: 768px) {
+  .important-sections h2 {
+    font-size: 2em;
+  }
+  .tile {
+    width: 90%;
+    height: auto;
+    padding: 20px;
+  }
+}
